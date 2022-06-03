@@ -1,0 +1,559 @@
+*{
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+html{
+  font-size: 62.5%;
+  /* height: 100%; */
+}
+body{
+  font-family: 'Fira Sans',sans-serif;
+  color: #0d0e0f;
+  background-color: #fff;
+  min-height: 100vh;
+  /* min-width: 100vw; */
+}
+#logo {
+  width: max(120px, 26vw);
+  height: 70px;
+  padding: 27px 70px 9px 40px;
+}
+header{
+  height: 15.5vh;
+  top: 0; left: 0; right: 0;
+  padding: 0px 60px 0px 70px;
+  z-index: 1000;
+}
+/* nav codes */
+header nav ul{
+  list-style: none;
+  padding-top: 1em;
+  float: right;
+}
+header nav ul li{
+  position: relative;
+  float: left;
+}
+header nav ul li a{
+  text-decoration: none;
+  padding: 0px 7px;
+  color: #212529;
+  display: block;
+  font-weight: 600;
+  font-size: 14px;
+}
+header nav ul li a:hover{
+  background-color: #eff1f3;
+  border-radius: 6px 6px 0px 0px;
+}
+/* nav ul li ul second ul */
+header nav ul li ul{
+  padding-top: 0%;
+  position: absolute;
+  left: 0;
+  width: 300px;
+  display: none;   
+}
+header nav ul li ul li{
+  width: 100%;
+}
+.tran{
+  max-width: 170px;
+}
+header nav ul li ul li a{
+  line-height: 1.9;
+  background: #eff1f3;
+  font-size: 13px;
+}
+header nav ul li ul li a:hover{
+  background: #fff;
+  border-radius: 0px;
+}
+header nav ul li:hover > ul{
+  display: initial;
+}
+/* styling for the hamburger icon */
+.menu-bar{
+  display: none;
+}
+header .hamburger{
+  cursor: pointer;
+  position: absolute;
+  right: 0;
+  top: 30px;
+  padding: 2px;
+  margin-right: 20px;
+  height: calc(100% - 96vh);
+  display: flex;
+  align-items: center;
+}
+#hamburger-icon div{
+  width: 35px;
+  height: 3px;
+  margin: 6px 0px 6px 0px;
+  background: #0f0f0f;
+  display: none;
+}
+
+/* body content styling */
+.body-content{
+  padding-bottom: 40px;
+}
+/* section 1 styling */
+.section-1{
+  background-color: rgba(0,45,143,0.85);
+  color: #ffffff;
+  padding: 50px 15px 30px;
+}
+.section-1-content{
+  text-align: center;
+  padding: 30px 15px;
+  margin: 0px 115px;
+}
+.section-1 h1{
+  margin-bottom: 7px;
+  font-size: 35px;
+  font-weight: 500;
+}
+.section-1 p{
+  margin-bottom: 7px;
+  font-size: 16px;
+}
+/* SECTION 2 styling */
+.section-2{
+  padding: 50px 0px;
+  display: flex;
+  justify-content: space-between;
+  margin: 0px 100px ;
+}
+.section-2-content{
+  padding: 0px 15px;
+  max-width: 560px;
+}
+.section-2-content h1{
+  color: #df3131;
+  font-weight: 600;
+  font-size: 28px;
+}
+.section-2-content p{
+  margin-bottom: 10px;
+  font-size: 16px;
+}
+.section-2-content ul{
+  padding-top: 15px;
+}
+.section-2-content ul li{
+  list-style-type: none;
+  padding-bottom: 10px;
+  font-size: 16px;
+}
+#img-fluid{
+  padding: 0px 15px;
+}
+
+
+/* footer styling */
+footer{      
+  color: #fff;
+  font-size: 13px;
+  position: sticky;
+  top: 100%;
+}
+footer h4{
+  font-weight: 800;
+  font-size: 18px;
+  color: #5CADE6;
+  max-width: 140px;
+}
+
+/* primary footer styling */
+footer #primary-footer {
+  padding: 20px 40px 20px 45px;
+  background-color: #002d8ff2;
+  overflow-x: hidden;
+  display: flex;
+  flex-direction: row;
+  justify-content:space-between;
+}
+footer #primary-footer .contact .column{
+  display: flex;
+  flex-direction: column;
+  max-width: 550px;
+}
+footer .column .row ul li{
+  line-height: 2;
+}
+.contact .column .us{
+  max-width: 100px;
+}
+.contact .column .row{
+  display: flex;
+  flex-direction: row;
+}
+.contact .column .row div{
+  padding-right: 0px;
+  min-width: 280px;
+}
+.contact .column .row li{
+  list-style-type: none;
+
+}
+.contact .column .row li a{
+  text-decoration: none;
+  color: #fff;
+}
+/* connect on the right */
+footer #primary-footer .connect{
+  width: 410px;
+  display: flex;
+  flex-direction: row;
+  justify-content: space-between;
+}
+footer #primary-footer .connect .secondary-row{
+  min-width: 170px;
+  padding-bottom: 133px;
+}
+.connect .secondary-row h4{
+  max-width: 150px;
+}
+.secondary-row div:nth-of-type(2) a{
+  color: #fff;
+  padding-right: 10px;
+}
+/* explore */
+footer #primary-footer .connect .explore{
+  padding-top: 20px;
+  min-width: 130px;
+}
+.connect .explore ul li a{
+  text-decoration: none;
+  color: #5CADE6;
+  font-weight: 800;
+  font-size: 18px;
+}
+
+/* Secondary footer Styling */
+footer #secondary-footer{
+  background: #002D8F;
+  padding: 20px 50px;
+  padding-left: 35px;
+}
+footer #secondary-footer .container{
+  display: flex;
+  flex-direction: row;
+  justify-content: space-between;
+}
+.container .privacy a{
+  text-decoration: none;
+  color: #fff;
+  font-size: 1.2em;
+}
+.container .privacy a:hover{
+  cursor: pointer;
+}
+
+
+/* responsive styling */
+
+/* responsuve styling: max-width of 1045 */
+@media screen and (max-width: 1045px){
+    /* SECTION 2 */
+  .section-2{
+    margin: 0px 70px ;
+  }
+  .section-2-content{
+    max-width: 400px;
+  }
+  .section-2-content h1{
+    font-size: 26px;
+  }
+  .section-2-content p{
+    font-size: 16px;
+  }
+  .section-2-content ul li{
+    font-size: 16px;
+  }
+}
+
+/* responsuve styling: max-width of 995 */
+@media screen and (max-width: 995px){
+  #logo {
+      width: max(40vw);
+      max-width: 210px;
+      height: 68px;
+      padding: 27px 0px 8px 35px;
+  }
+  header{
+      height: 11vh;
+      padding: 0;
+  }
+  .hamburger{
+      display: block;
+  }
+  header{
+      background-color: #fff;
+
+  }
+  header nav{
+      top: calc(100% - 89vh);
+      position: absolute;
+      width: 100%;
+      background: #f8f9fa;
+      display: none;
+      z-index: 1000;
+  }
+  header nav ul{
+      list-style-type: none;
+      float: left;
+      display: flex;
+      flex-direction: column;
+  }
+  header nav ul li{
+      margin: 2px 7px 10px 17px;
+  }
+  header nav ul li a{
+      text-decoration: none;
+      color: #0d0e0f;
+      font-weight: 600;
+      font-size: 14px;
+      display: block;
+  }
+  header nav ul li a:hover{
+      background-color: #efeff0;
+  }
+  header nav ul li ul{
+      padding-top: 0%;
+      position:relative;
+      left: 0;
+      width: 320px;
+      display: none;
+  }
+  header nav ul li ul li{
+      margin: 0;
+  }
+  header nav ul li:hover > ul{
+      display: initial;
+  }
+  #hamburger-icon div{
+      display: block;
+  }
+  .menu-bar:checked ~ nav{
+      display: flex;
+  }
+}
+
+/* responsuve styling: max-width of 915 */
+@media screen and (max-width: 915px){
+  .contact .column .row{
+      display: flex;
+      flex-direction: column;
+  }  
+  footer #primary-footer .contact .column{
+      display: flex;
+      flex-direction: column;
+      max-width: 950px;
+  }  
+  .contact .column .row .address-1{
+      padding-bottom: 30px;
+  }
+  .contact .column .row div{
+      padding-right: 0px;
+      min-width: 280px;
+  }
+  .body-content{
+      min-height: calc(100vh - 581px);
+  } 
+  /* section 1 styling */
+  .section-1{
+    padding: 50px 15px 30px;
+  }
+  .section-1-content{
+    text-align: center;
+    padding: 20px 9px;
+    margin: 0px 145px;
+  }
+  .section-1 h1{
+    font-size: 23px;
+  }
+  .section-1 p{
+    font-size: 11px;
+  }
+   /* SECTION 2 */
+   .section-2{
+    padding: 40px 0px;
+    margin: 0px 60px ;
+  }
+  .section-2-content{
+    max-width: 370px;
+  }
+  .section-2-content h1{
+    font-size: 22px;
+  }
+  .section-2-content p{
+    margin-bottom: 10px;
+    font-size: 14px;
+  }
+  .section-2-content ul li{
+    font-size: 14px;
+  }
+  #img-fluid{
+    max-width: 320px;
+    max-height: 210px;
+  }
+}
+
+/* responsuve styling: max-width of 740 */
+@media screen and (max-width: 740px){
+    /* section 1 styling */
+    .section-1{
+      padding: 35px 15px 15px;
+    }
+    .section-1-content{
+      padding: 17px 9px;
+      margin: 0px 70px;
+    }
+    .section-1 h1{
+      font-size: 20px;
+    }
+    .section-1 p{
+      font-size: 11px;
+    }
+        /* SECTION 2 */
+    .section-2{
+      padding: 40px 0px;
+      flex-direction: column;
+      margin: 0px 17px ;
+    }
+    .section-2-content{
+      padding: 0px 15px 25px;
+      max-width: 760px;
+    }
+    .section-2-content h1{
+      font-size: 28px;
+    }
+    .section-2-content p{
+      font-size: 16px;
+    }
+    .section-2-content ul{
+      padding-top: 15px;
+    }
+    .section-2-content ul li{
+      padding-bottom: 10px;
+      font-size: 16px;
+    }
+    #img-fluid{
+      padding: 0px 15px;
+      max-width: 450px;
+      max-height: 250px;
+    }
+}
+
+/* responsuve styling: max-width of 640 */
+@media screen and (max-width: 640px){
+  footer #primary-footer {
+      display: flex;
+      flex-direction: column;
+      justify-content:space-between;
+  }    
+  .contact .column .row{
+      display: flex;
+      flex-direction: row;
+  }  
+  footer #primary-footer .connect .secondary-row{
+      min-width: 10px;
+      padding-bottom: 10px;
+  }
+  .column .row div:nth-of-type(2) {
+      min-width: 240px;
+  }
+  .connect{
+      max-width: 400px;
+  }
+  .body-content{
+      min-height: calc(100vh - 514px);
+  } 
+  footer #secondary-footer{
+      padding: 20px 30px;
+  }
+  .copyright{
+      max-width: 160px;
+  }
+  .privacy{
+      max-width: 160;
+      padding-left: 100px;
+  }
+}
+
+/* responsuve styling: max-width of 570 */
+@media screen and (max-width: 570px){
+  .contact .column .row{
+      display: flex;
+      flex-direction: column;
+  } 
+  .contact{
+      max-width: 500px;
+  }
+  footer #secondary-footer{
+      padding: 20px 35px 20px 25px; 
+  }
+  .copyright{
+      max-width: 160px;
+  }
+  .privacy{
+      max-width: 160;
+      padding-left: 100px;
+  }
+  .connect{
+      max-width: 240px;
+  }
+  .secondary-row{
+      max-width: 100px;
+  }
+}
+
+/* responsuve styling: max-width of 520 */
+@media screen and (max-width: 520px){
+  /* section 1 styling */
+  .section-1{
+    padding: 20px 15px 11px;
+  }
+  .section-1-content{
+    padding: 15px 9px;
+    margin: 0px 30px;
+  }
+  .section-1 h1{
+    font-size: 17px;
+  }
+  .section-1 p{
+    font-size: 9px;
+  }
+    /* SECTION 2 */
+    .section-2{
+    padding: 40px 0px;
+    flex-direction: column;
+    margin: 0px 17px ;
+  }
+  .section-2-content{
+    padding: 0px 15px 25px;
+    max-width: 470px;
+  }
+  .section-2-content h1{
+    font-size: 23px;
+  }
+  .section-2-content p{
+    font-size: 13px;
+  }
+  .section-2-content ul{
+    padding-top: 15px;
+  }
+  .section-2-content ul li{
+    padding-bottom: 10px;
+    font-size: 13px;
+  }
+  #img-fluid{
+    padding: 0px 15px;
+    max-width: 330px;
+    max-height: 160px;
+  }
+}
